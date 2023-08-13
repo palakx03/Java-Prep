@@ -23,4 +23,24 @@ public class Array {
             System.out.println(arr[i]);
         }
     }
+    public void removeAt(int index){
+        // Validat the index
+        if(index<0 || index>=count)
+            throw new IllegalArgumentException();
+        
+        //Shift items to the left i.e filling the place of the removed item
+
+        for(int i = index; i<count;i++){
+            arr[i]=arr[i+1];
+        
+        count--;
+        }
+    }
+    public int indexOf(int target){
+        for(int i=0;i<count;i++){
+            if(arr[i]==target){
+                return i;
+            }
+        }return -1;
+    }
 }

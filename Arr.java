@@ -1,4 +1,4 @@
-// import java.util.Arrays;
+import java.util.Arrays;
 // public class Arr {
 //     public static void main(String[] args) {
 //         // int[] numbers = new int[5];
@@ -20,7 +20,8 @@ public class Arr{
         numbers.insert(20);
         numbers.insert(30);
         numbers.insert(40);
+        // numbers.removeAt(-1);
+        System.out.println(numbers.indexOf(10));
         numbers.print();
-        
     }
  }
